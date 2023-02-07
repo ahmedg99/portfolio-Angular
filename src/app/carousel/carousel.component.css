@@ -1,0 +1,28 @@
+.study-section {
+    background-color: black;
+    height : 450px ;
+    padding : 50px ;
+    font-size: 25px;
+}
+
+
+
+
+/* On screens that are 900px or less */
+@media screen and (max-width: 900px) {
+    .study-section{
+        height : 600px ;
+     }
+  }
+
+
+  /* On screens that are 382px or less */
+@media screen and (max-width: 382px) {
+    .study-section{
+        height : 800px ;
+     }
+  }
+.my-background-title {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
