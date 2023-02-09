@@ -1,3 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.study-section {
+    background-color: #111827;
+    height : 450px ;
+    padding : 50px ;
+    font-size: 25px;
+}
 
- 
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+                 
+
+
+/* On screens that are 900px or less */
+@media screen and (max-width: 900px) {
+    .study-section{
+        height : 600px ;
+     }
+  }
+
+
+  /* On screens that are 382px or less */
+@media screen and (max-width: 382px) {
+    .study-section{
+        height : 800px ;
+     }
+  }
+.my-background-title {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+* {
+    font-family: 'Circular Std', sans-serif;}
