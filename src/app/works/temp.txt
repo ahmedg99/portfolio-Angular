@@ -1,0 +1,3 @@
+Technical environment: VisualStudio Code, WampServer.
+Development language: PHP, JAVA, MySQL, HTML,CSS,JS.
+Framework: Symphony, BootStrap.

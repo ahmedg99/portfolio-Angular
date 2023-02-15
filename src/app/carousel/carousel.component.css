@@ -1,8 +1,7 @@
 .study-section {
     background-color: #111827;
-    height : 450px ;
-    padding : 50px 50px 50px 150px ;
-    font-size: 25px;
+    height : 600px ;
+     font-size: 25px;
 }
 
 @import url('https://fonts.cdnfonts.com/css/circular-std');
