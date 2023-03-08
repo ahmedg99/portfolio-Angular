@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  goToWorks(): void {
+    this.router.navigate(['/work']).then(() => {
+      const worksElement = document.getElementById('works');
+      if (worksElement) {
+        worksElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 }

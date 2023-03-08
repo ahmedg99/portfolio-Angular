@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-works',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
+    this.renderer.setProperty(document.documentElement, 'scrollTop', 0);
   }
 
 }

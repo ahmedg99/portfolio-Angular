@@ -9,6 +9,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { AnimatedTextComponent } from './animated-text/animated-text.component';
 import { WorksComponent } from './works/works.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { WorksComponent } from './works/works.component';
     CarouselComponent,
     FooterComponent,
     AnimatedTextComponent,
-    WorksComponent
+    WorksComponent,
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
