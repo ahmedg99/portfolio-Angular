@@ -20,4 +20,14 @@ export class InfoComponent implements OnInit {
       }
     });
   }
+
+
+  goToContact(): void {
+    this.router.navigate(['/contact']).then(() => {
+      const worksElement = document.getElementById('footer');
+      if (worksElement) {
+        worksElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 }
