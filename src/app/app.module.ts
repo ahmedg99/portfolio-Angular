@@ -11,6 +11,7 @@ import { AnimatedTextComponent } from './animated-text/animated-text.component';
 import { WorksComponent } from './works/works.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
     AnimatedTextComponent,
     WorksComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsComponent , 
   ],
   imports: [
     BrowserModule,
