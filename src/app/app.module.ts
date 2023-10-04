@@ -12,6 +12,11 @@ import { WorksComponent } from './works/works.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects/projects.component';
+import { FormcontactComponent } from './form/formcontact/formcontact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,10 +30,15 @@ import { ProjectsComponent } from './projects/projects/projects.component';
     NotFoundComponent,
     HomeComponent,
     ProjectsComponent , 
-  ],
+    FormcontactComponent,
+   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]
