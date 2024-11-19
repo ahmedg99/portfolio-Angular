@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { WorksComponent } from './works/works.component';
+import { ProjectsComponent } from './projects/projects/projects.component';
+import { UklaProjectComponent } from './ukla-project/ukla-project.component';
 
 const routes: Routes = [ 
   {path : '' , component : HomeComponent  },
-  {path : 'work' , component : WorksComponent},
-  { path : '**' ,component :  NotFoundComponent }
-  
-
+  {path : 'work' , component : ProjectsComponent  },
+  {path : 'project/ukla' , component : UklaProjectComponent  },
 ];
-//{ path : '**' ,component :  NotFountComponent }
+ 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

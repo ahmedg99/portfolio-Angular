@@ -17,9 +17,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UklaProjectComponent } from './ukla-project/ukla-project.component';
+import { ProblemSolvingComponent } from './problem-solving/problem-solving.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     NavbarComponent,
     InfoComponent,
@@ -31,6 +33,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ProjectsComponent , 
     FormcontactComponent,
+    UklaProjectComponent,
+      ProblemSolvingComponent
    ],
   imports: [
     BrowserModule,
